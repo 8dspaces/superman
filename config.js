@@ -61,13 +61,9 @@
     format : '.0f',
 
     // 图表左右上下间距。
-/*    left_margin : 260,
-    right_margin : 150,
-    top_margin : 200,
-    bottom_margin : 0,*/
     left_margin : 30,
-    right_margin : 10,
-    top_margin : 200,
+    right_margin : 80,
+    top_margin : 150,
     bottom_margin : 0,
 
     // 时间标签坐标。
@@ -84,6 +80,6 @@
     big_value: false,
     
     // 如果要使用半对数坐标，则开启此项
-    use_semilogarithmic_coordinate: true
+    use_semilogarithmic_coordinate: false
 
 }

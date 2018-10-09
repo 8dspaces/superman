@@ -8,11 +8,13 @@
    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    <title>Superman Vs IronMan</title>
+    <title>Superman Vs Ironman</title>
 </head>
 
 <body>
     <center>
+        <h3>Superman vs Ironman</h3>
+        <hr/>
         <svg width="900" height="600"></svg>
         <script src="config.js"></script>
         <link rel="stylesheet" href="color.css">
@@ -20,46 +22,46 @@
         $(document).ready(function(){
 
         str = "name,type,value,date\n\
-        S,superman,7348,2018/9/19\n\
-        M,ironman,5783,2018/9/19\n\
-        S,superman,15142,2018/9/20\n\
-        M,ironman,10827,2018/9/20\n\
-        S,superman,25065,2018/9/21\n\
-        M,ironman,19345,2018/9/21\n\
-        S,superman,30165,2018/9/22\n\
-        M,ironman,30452,2018/9/22\n\
-        S,superman,38612,2018/9/23\n\
-        M,ironman,38640,2018/9/23\n\
-        S,superman,44389,2018/9/24\n\
-        M,ironman,40609,2018/9/24\n\
-        S,superman,48981,2018/9/25\n\
-        M,ironman,45607,2018/9/25\n\
-        S,superman,60549,2018/9/26\n\
-        M,ironman,50696,2018/9/26\n\
-        S,superman,60625,2018/9/27\n\
-        M,ironman,55608,2018/9/27\n\
-        S,superman,67846,2018/9/28\n\
-        M,ironman,60448,2018/9/28\n\
-        S,superman,71493,2018/9/29\n\
-        M,ironman,62867,2018/9/29\n\
-        S,superman,76316,2018/9/30\n\
-        M,ironman,65744,2018/9/30\n\
-        S,superman,76360,2018/10/1\n\
-        M,ironman,69524,2018/10/1\n\
-        S,superman,76580,2018/10/2\n\
-        M,ironman,74298,2018/10/2\n\
-        S,superman,87080,2018/10/3\n\
-        M,ironman,78841,2018/10/3\n\
-        S,superman,93433,2018/10/4\n\
-        M,ironman,86564,2018/10/4\n\
-        S,superman,99617,2018/10/5\n\
-        M,ironman,90644,2018/10/5\n\
-        S,superman,99671,2018/10/6\n\
-        M,ironman,91130,2018/10/6\n\
-        S,superman,111381,2018/10/7\n\
-        M,ironman,96331,2018/10/7\n\
-        S,superman,118037,2018/10/8\n\
-        M,ironman,100237,2018/10/8";
+        S,Superman,7348,2018/9/19\n\
+        M,Ironman,5783,2018/9/19\n\
+        S,Superman,15142,2018/9/20\n\
+        M,Ironman,10827,2018/9/20\n\
+        S,Superman,25065,2018/9/21\n\
+        M,Ironman,19345,2018/9/21\n\
+        S,Superman,30165,2018/9/22\n\
+        M,Ironman,30452,2018/9/22\n\
+        S,Superman,38612,2018/9/23\n\
+        M,Ironman,38640,2018/9/23\n\
+        S,Superman,44389,2018/9/24\n\
+        M,Ironman,40609,2018/9/24\n\
+        S,Superman,48981,2018/9/25\n\
+        M,Ironman,45607,2018/9/25\n\
+        S,Superman,60549,2018/9/26\n\
+        M,Ironman,50696,2018/9/26\n\
+        S,Superman,60625,2018/9/27\n\
+        M,Ironman,55608,2018/9/27\n\
+        S,Superman,67846,2018/9/28\n\
+        M,Ironman,60448,2018/9/28\n\
+        S,Superman,71493,2018/9/29\n\
+        M,Ironman,62867,2018/9/29\n\
+        S,Superman,76316,2018/9/30\n\
+        M,Ironman,65744,2018/9/30\n\
+        S,Superman,76360,2018/10/1\n\
+        M,Ironman,69524,2018/10/1\n\
+        S,Superman,76580,2018/10/2\n\
+        M,Ironman,74298,2018/10/2\n\
+        S,Superman,87080,2018/10/3\n\
+        M,Ironman,78841,2018/10/3\n\
+        S,Superman,93433,2018/10/4\n\
+        M,Ironman,86564,2018/10/4\n\
+        S,Superman,99617,2018/10/5\n\
+        M,Ironman,90644,2018/10/5\n\
+        S,Superman,99671,2018/10/6\n\
+        M,Ironman,91130,2018/10/6\n\
+        S,Superman,111381,2018/10/7\n\
+        M,Ironman,96331,2018/10/7\n\
+        S,Superman,118037,2018/10/8\n\
+        M,Ironman,100237,2018/10/8";
         var data = d3.csvParse(str);
         draw(data);
         function draw(data) {
