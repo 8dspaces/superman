@@ -31,7 +31,7 @@
     item_x : 130,
 
     // 时间点间隔时间。
-    interval_time : 2,
+    interval_time : 1,
 
     // 上方文字水平高度。
     text_y : -50,
