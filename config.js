@@ -62,7 +62,7 @@
 
     // 图表左右上下间距。
     left_margin : 30,
-    right_margin : 80,
+    right_margin : 120,
     top_margin : 150,
     bottom_margin : 0,
 
