@@ -22,7 +22,7 @@
 
     // 使用自定义的颜色，需要手动填写color.css这个文件。
     // 如果为false，则随机配色。
-    use_custom_color : false,
+    use_custom_color : true,
 
     // 附加信息内容。
     itemLabel : "Superman:",

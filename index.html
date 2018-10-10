@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="stylesheet.css">
-   
+    <link rel="stylesheet" href="color.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <title>Superman Vs Ironman</title>
@@ -17,7 +17,7 @@
         <hr/>
         <svg width="900" height="600"></svg>
         <script src="config.js"></script>
-        <link rel="stylesheet" href="color.css">
+        
         <script>
         $(document).ready(function(){
 
@@ -91,7 +91,7 @@
                 // 不随机选色
                 if (use_custom_color) {
                     if (use_type_info == false || divide_by_type == false) {
-                        return d.name;
+                        return d.name.trim();
                     }
                     return d.type;
                 }
